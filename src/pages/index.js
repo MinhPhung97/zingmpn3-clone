@@ -1,0 +1,9 @@
+export { default as Home } from './Home';
+export { default as Personal } from './Personal';
+export { default as Radio } from './Radio';
+export { default as Zingchart } from './Zingchart';
+export { default as Following } from './Following';
+export { default as NewMusic } from './NewMusic';
+export { default as Catalog } from './Catalog';
+export { default as Top } from './Top';
+export { default as MV } from './MV';

@@ -1,0 +1,129 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    background-color: #231b2e;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 25px 0 28px;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 120px;
+    height: 40px;
+}
+
+.sidebar-above {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:after {
+        content: '';
+        border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        top: 205px;
+    }
+}
+
+.sidebar-under {
+    position: relative;
+    margin-top: 15px;
+    margin-right: 2px;
+    overflow-y: hidden;
+    margin-bottom: 54px;
+
+    &:hover {
+        overflow-y: overlay;
+    }
+}
+
+.sidebar-under-login,
+.login-vip {
+    margin-top: 15px;
+    padding: 15px 8px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: purple;
+}
+
+.login-vip {
+    background-image: linear-gradient(117deg, #5a4be7, #c86dd7 102%);
+}
+
+.login-text {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.login-btn {
+    font-size: 12px;
+    padding: 6px 35px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+}
+
+.login-vip-btn {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px 35px;
+    font-weight: 600;
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+    border-radius: 999px;
+    color: #000;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+
+.add-btn {
+    position: fixed;
+    width: 240px;
+    left: 0;
+    height: 54px;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+    padding: 0 28px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
+    font-weight: 700;
+    bottom: 0;
+    color: #fff;
+    background-color: #231b2e;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+}
+
+.add-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.add-text {
+    font-size: 14px;
+}

@@ -1,5 +1,5 @@
 function Home() {
-    return <h1>Trang chủ</h1>;
+    return <h1>Khám Phá</h1>;
 }
 
 export default Home;

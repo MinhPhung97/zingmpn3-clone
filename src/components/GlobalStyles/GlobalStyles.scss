@@ -3,19 +3,50 @@
 
 :root {
     --primary: #512275;
+    --nav-text: #dadada;
 }
 
 html {
     font-size: 62.5%;
 }
-
-* {
-    box-sizing: border-box;
-}
-
 body {
+    overflow-y: overlay;
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+html *::-webkit-scrollbar-track {
+    box-shadow: inset #fff;
+    border-radius: 4px;
+}
+
+/* Handle */
+html *::-webkit-scrollbar-thumb {
+    background: #ffffff4d;
+    border-radius: 4px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
 }
