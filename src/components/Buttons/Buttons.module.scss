@@ -1,7 +1,28 @@
 .wrapper {
-    min-width: 100px;
-    padding: 9px 16px;
-    border-radius: 4px;
-    font-size: 1.6rem;
+    color: #fff;
+    font-size: 1.2rem;
     font-weight: 700;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0.9);
+    }
+}
+
+//Types btn
+.primary {
+    padding: 6px 35px;
+    background-color: #ffdb00;
+    border-color: #ffdb00;
+    color: #000;
+    border-radius: 999px;
+}
+
+.outline {
+    padding: 6px 35px;
+    background-color: #801aab;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 999px;
 }

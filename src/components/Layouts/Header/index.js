@@ -9,9 +9,7 @@ function Header() {
     return (
         <header className={cx('header')}>
             <div>
-                <Button primary to="/login" onClick={() => alert('hi')}>
-                    Log in
-                </Button>
+                <Button className={cx('button-test')}>Log in</Button>
             </div>
         </header>
     );

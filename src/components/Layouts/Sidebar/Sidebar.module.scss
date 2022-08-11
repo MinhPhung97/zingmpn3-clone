@@ -22,6 +22,11 @@
 .sidebar-above {
     position: relative;
     margin-bottom: 15px;
+}
+
+.dive-sidebar {
+    position: relative;
+    height: 1px;
 
     &:after {
         content: '';
@@ -29,7 +34,7 @@
         position: absolute;
         left: 25px;
         right: 25px;
-        top: 205px;
+        top: 0px;
     }
 }
 
@@ -38,7 +43,6 @@
     margin-top: 15px;
     margin-right: 2px;
     overflow-y: hidden;
-    margin-bottom: 54px;
 
     &:hover {
         overflow-y: overlay;
@@ -70,7 +74,7 @@
     font-size: 12px;
     padding: 6px 35px;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 999px;
     background-color: hsla(0, 0%, 100%, 0.1);
     border: 1px solid #fff;
     color: #fff;
@@ -81,41 +85,29 @@
     }
 }
 
-.login-vip-btn {
-    text-decoration: none;
-    font-size: 12px;
-    padding: 6px 35px;
-    font-weight: 600;
-    background-color: #ffdb00;
-    border-color: #ffdb00;
-    border-radius: 999px;
-    color: #000;
-
-    &:hover {
-        filter: brightness(0.9);
-    }
-}
-
 .add-btn {
-    position: fixed;
-    width: 240px;
-    left: 0;
-    height: 54px;
-    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-    padding: 0 28px;
-    border-radius: 0;
     display: flex;
     align-items: center;
-    color: var(--text-primary);
-    font-weight: 700;
-    bottom: 0;
+    min-height: 54px;
+    min-width: 240px;
+    padding: 0 28px;
     color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
     background-color: #231b2e;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 
     &:hover {
         cursor: pointer;
-        filter: brightness(0.9);
+        .add-btn-item {
+            filter: brightness(0.9);
+        }
     }
+}
+
+.add-btn-item {
+    display: flex;
+    align-items: center;
 }
 
 .add-icon {

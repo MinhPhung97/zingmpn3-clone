@@ -2,8 +2,10 @@ import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import images from '~/assets/images/';
+import Button from '~/components/Buttons';
 import Menu, { MenuItem } from './Menu';
 import config from '~/configs';
 import {
@@ -19,7 +21,6 @@ import {
     TopIcon,
     MvIcon,
 } from '~/components/Icons';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -53,6 +54,8 @@ function Sidebar() {
                 </Menu>
             </div>
 
+            <div className={cx('dive-sidebar')}></div>
+
             <div className={cx('sidebar-under')}>
                 <div className={cx('menu-scroll')}>
                     <Menu>
@@ -69,25 +72,25 @@ function Sidebar() {
 
                     <div className={cx('sidebar-under-login')}>
                         <div className={cx('login-text')}>Đăng nhập để khám phá playlist dành riêng cho bạn</div>
-                        <button className={cx('login-btn')}>
-                            <span>Đăng nhập</span>
-                        </button>
+                        <Button outline>ĐĂNG NHẬP</Button>
                     </div>
                     <div className={cx('login-vip')}>
                         <div className={cx('login-text')}>Nghe nhạc không quảng cáo cùng kho nhạc VIP</div>
-                        <a className={cx('login-vip-btn')} target="_blank" href="/">
-                            NÂNG CẤP VIP
-                        </a>
+                        <div>
+                            <Button primary href="/" target="_blank">
+                                NÂNG CẤP VIP
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className={cx('add-playlist')}>
-                <button className={cx('add-btn')}>
+            <button className={cx('add-btn')}>
+                <div className={cx('add-btn-item')}>
                     <FontAwesomeIcon icon={faPlus} className={cx('add-icon')} />
                     <span className={cx('add-text')}>Tạo playlist mới</span>
-                </button>
-            </div>
+                </div>
+            </button>
         </aside>
     );
 }
